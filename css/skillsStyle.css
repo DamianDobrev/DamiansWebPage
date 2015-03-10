@@ -1,0 +1,82 @@
+#skills {
+    position: absolute;
+    width: 100%;
+    padding-top: 90px;
+    z-index: 0;
+    background: #fff;
+    min-height: 100vh;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+#skills > ul li {
+    position: relative;
+    display: block;
+    width: 49%;
+    height: 80px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#skills > ul li:nth-child(odd) {
+    margin-right: 2%;
+}
+
+#skills > ul li section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #319a8b;
+    color: #ffffff;
+    z-index: 120;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+#skills > ul li article {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 80px;
+    text-align: center;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 40px;
+    z-index: 300;
+    color: #ffffff;
+    background: none;
+}
+
+#skills > ul li article:hover {
+    cursor: pointer;
+}
+
+#skills > ul li div {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: #5d51b2;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 1;
+    z-index: 150;
+}
+
+#skills > ul li:hover div {
+    width: 80%;
+}
+
+#skills > ul li p {
+    display: none;
+    background: #232323;
+    z-index: 20;
+    padding: 40px;
+    color: #ffffff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+}

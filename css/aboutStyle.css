@@ -1,0 +1,103 @@
+#about {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: #549a98;
+    z-index: 0;
+}
+
+#about > section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 90px 180px 0;
+}
+
+.tabs {
+    margin: 60px 0 20px 0;
+    position: relative;
+}
+
+.tabs input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.tabs > li {
+    float: left;
+}
+
+.tabs > li > label {
+    background: #222;
+    display: inline-block !important;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    color: #fff;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 30px;
+    position: relative;
+    margin: 0 10px 0 0;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.tabs > li > label:hover {
+    opacity: 0.8;
+}
+
+.plainText {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    background: #ffffff;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+
+.tabs input[type="radio"]:checked ~ p {
+    display: block;
+    opacity: 1;
+}
+
+.tabs input[type="radio"]:checked ~ label {
+    background: #ffffff;
+    color: #222222;
+    opacity: 1 !important;
+}
+
+#about .background {
+    background: #549a98 url("../images/txtAbout.png") repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+}
+
+#about .background2 {
+    background: #549a98 url("../images/txtAbout.png") repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+}
