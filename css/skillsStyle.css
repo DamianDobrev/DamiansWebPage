@@ -3,7 +3,7 @@
     width: 100%;
     padding-top: 90px;
     z-index: 0;
-    background: #fff;
+    background: #fff url('../images/skillstxt.png') repeat;
     min-height: 100vh;
     padding-left: 180px;
     padding-right: 180px;

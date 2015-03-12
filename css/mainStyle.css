@@ -119,6 +119,83 @@ body {
     height: 100%;
 }
 
-/*.page {*/
-    /*position: static;*/
-/*}*/
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    padding: 20vh 20vw;
+    display: none;
+}
+
+.popup > div {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.8);
+}
+
+.popup section {
+    position: relative;
+    width: 60vw;
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.popup header {
+    position: relative;
+    color: #ffffff;
+    width: 100%;
+    background: #000000;
+    font-size: 18px;
+    font-family: "Julius Sans One", sans-serif;
+    line-height: 30px;
+    padding: 15px 30px;
+    min-height: 60px;
+}
+
+.popup header > button {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background: #cc5063;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    border: none;
+    outline: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    padding: 1px 1px 0 0;
+    font-weight: bold;
+}
+
+.popup header > button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.popup article{
+    width: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    padding: 50px 30px;
+}
+
+.popup footer {
+    width: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    border-top: 1px solid #ededed;
+    padding: 10px 30px !important;
+    color: #555;
+}

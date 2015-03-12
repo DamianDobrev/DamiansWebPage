@@ -1,8 +1,46 @@
 <div id="portfolio">
-    <section>
-        <h2>Hello there, I'm Damian</h2>
-        <section>
-            A junior developer with lots of love to give
-        </section>
+    <section class="categories">
+        <ul>
+            <li ng-repeat="category in categories">
+                <button ng-bind="category"
+                        ng-click="clickCat($index)"
+                        ng-class="{'activeCategory': $index == currentCategoryIndex}"></button>
+            </li>
+        </ul>
     </section>
+    <section id="projects">
+        <ul>
+            <li ng-repeat="item in prtItems | filter:filterItems">
+                <header>
+                    <div ng-bind="item.title">
+                    </div>
+                </header>
+                <section class="imgContainer">
+                    <img src="{{item.pictureUrl}}">
+                </section>
+                <footer>
+                    <button ng-click="showPopup(item)">More</button>
+                    <a href="{{item.destinationUrl}}" target="_blank"><button>Open</button></a>
+                    <a href="{{item.githubUrl}}" target="_blank"><button>Github</button></a>
+                </footer>
+            </li>
+        </ul>
+    </section>
+    <div class="popup">
+        <div ng-click="closePopup()"></div>
+        <section>
+            <header>
+                <span ng-bind="itemInfo.title"></span>
+                <button ng-click="closePopup()">X</button>
+            </header>
+            <article ng-bind="itemInfo.description">
+                This is a description of my new site, it is quite cool and it is done in Java, C#, Ruby and some other languages.
+            </article>
+            <footer>
+                Category: <span ng-bind="itemInfo.categoryText"></span>
+            </footer>
+        </section>
+    </div>
+    <div class="background"></div>
+    <div class="background2"></div>
 </div>

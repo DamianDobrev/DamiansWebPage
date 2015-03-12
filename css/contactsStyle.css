@@ -1,0 +1,51 @@
+#contacts {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    z-index: 0;
+    padding-top: 120px;
+}
+
+#contacts .cnt {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contacts .background {
+    background: #efefef;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+}
+
+#contacts .background2 {
+    background: #efefef;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+}
+
+#contacts div {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 22px;
+    margin: 44px 0;
+}
+
+#contacts p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 22px;
+    color: #549a98;
+    margin: 20px 0;
+}
+
+#contacts p span {
+    color: #000000;
+}
