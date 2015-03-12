@@ -1,12 +1,10 @@
 #skills {
     position: absolute;
     width: 100%;
-    padding-top: 90px;
     z-index: 0;
     background: #fff url('../images/skillstxt.png') repeat;
     min-height: 100vh;
-    padding-left: 180px;
-    padding-right: 180px;
+    padding: 90px 180px 0;
 }
 
 #skills > ul li {
@@ -65,10 +63,6 @@
     transition: all 0.5s;
     opacity: 1;
     z-index: 150;
-}
-
-#skills > ul li:hover div {
-    width: 80%;
 }
 
 #skills > ul li p {

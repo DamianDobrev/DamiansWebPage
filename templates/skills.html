@@ -3,35 +3,27 @@
         <h2>Skills</h2>
     </section>
     <ul>
-        <li>
-            <article>C#</article>
-            <div></div>
+        <li ng-repeat="item in skillsItems"
+            ng-mouseover="itemWidthStyle={width: item.knowledgePercent+'%'}"
+            ng-mouseleave="itemWidthStyle={width: '0'}"
+            ng-click="showPopup(item)">
+            <article ng-bind="item.name"></article>
+            <div ng-style="itemWidthStyle"></div>
             <section></section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis dolore excepturi, ipsum itaque maiores omnis quas qui quisquam quod? Architecto atque commodi est ex iure maiores qui sint, ut.</p>
-        </li>
-        <li>
-            <article>Java</article>
-            <div></div>
-            <section></section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis dolore excepturi, ipsum itaque maiores omnis quas qui quisquam quod? Architecto atque commodi est ex iure maiores qui sint, ut.</p>
-        </li>
-        <li>
-            <article>JavaScript</article>
-            <div></div>
-            <section></section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis dolore excepturi, ipsum itaque maiores omnis quas qui quisquam quod? Architecto atque commodi est ex iure maiores qui sint, ut.</p>
-        </li>
-        <li>
-            <article>HTML</article>
-            <div></div>
-            <section></section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis dolore excepturi, ipsum itaque maiores omnis quas qui quisquam quod? Architecto atque commodi est ex iure maiores qui sint, ut.</p>
-        </li>
-        <li>
-            <article>CSS</article>
-            <div></div>
-            <section></section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis dolore excepturi, ipsum itaque maiores omnis quas qui quisquam quod? Architecto atque commodi est ex iure maiores qui sint, ut.</p>
         </li>
     </ul>
+    <div class="popup">
+        <div ng-click="closePopup()"></div>
+        <section>
+            <header>
+                <span ng-bind="itemInfo.name"></span>
+                <button ng-click="closePopup()">X</button>
+            </header>
+            <article ng-bind="itemInfo.description">
+            </article>
+            <footer>
+                Skill level: <span ng-bind="itemInfo.knowledgePercent"></span>%
+            </footer>
+        </section>
+    </div>
 </div>

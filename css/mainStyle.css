@@ -121,9 +121,11 @@ body {
 
 .popup {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: 200;
+    z-index: 400;
     padding: 20vh 20vw;
     display: none;
 }
